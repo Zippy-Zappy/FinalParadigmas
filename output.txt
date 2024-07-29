@@ -1,0 +1,151 @@
+El lexema 'import' es una palabra reservada.
+El lexema 'aritmeticos' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'asignacion' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'enteros' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'es_string' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'identificadores' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'logicos' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'puntuacion' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'relacionales' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'reales' es un identificador.
+El lexema 'import' es una palabra reservada.
+El lexema 'reservadas' es un identificador.
+El lexema 'def' es una palabra reservada.
+El lexema 'analizar_lexicamente' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'if' es una palabra reservada.
+El lexema 'len' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema ')' es un símbolo de puntuación.
+El lexema '1' es un número entero.
+El lexema ':' es un símbolo de puntuación.
+El lexema 'return' es una palabra reservada.
+El lexema '(' es un símbolo de puntuación.
+El lexema '"Error. El lexema ingresado no debe estar vacÃ­o."' es un string.
+El lexema ')' es un símbolo de puntuación.
+El lexema 'else' es una palabra reservada.
+El lexema ':' es un símbolo de puntuación.
+El lexema 'devolucion' es un identificador.
+El lexema '=' es un operador de asignación.
+El lexema 'f' es un identificador.
+El lexema '"El lexema '{lexema}' es un"' es un string.
+El lexema 'if' es una palabra reservada.
+El lexema 'reales' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_real' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" nÃºmero real."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'enteros' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_entero' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" nÃºmero entero."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'reservadas' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_palabra_reservada' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '"a palabra reservada."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'identificadores' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_identificador' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" identificador."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'es_string' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_string' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" string."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'aritmeticos' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_operador_aritmetico' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" operador aritmÃ©tico."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'asignacion' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_operador_asignacion' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" operador de asignaciÃ³n."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'relacionales' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_operador_relacional' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" operador relacional."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'logicos' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_operador_logico' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" operador lÃ³gico."' es un string.
+El lexema 'elif' es una palabra reservada.
+El lexema 'puntuacion' es un identificador.
+El lexema '.' es un símbolo de puntuación.
+El lexema 'es_simbolo_de_puntuacion' es un identificador.
+El lexema '(' es un símbolo de puntuación.
+El lexema 'lexema' es un identificador.
+El lexema '):' es un operador que no se utiliza en Python. Error.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '" sÃ­mbolo de puntuaciÃ³n."' es un string.
+El lexema 'else' es una palabra reservada.
+El lexema ':' es un símbolo de puntuación.
+El lexema 'devolucion' es un identificador.
+El lexema '+=' es un operador de asignación.
+El lexema '(' es un símbolo de puntuación.
+El lexema '" operador que no se utiliza en Python. Error."' es un string.
+El lexema ')' es un símbolo de puntuación.
+El lexema 'return' es una palabra reservada.
+El lexema 'devolucion' es un identificador.

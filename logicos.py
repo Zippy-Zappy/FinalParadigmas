@@ -1,31 +1,36 @@
 def es_operador_logico (lexema):
-    
-    if len(lexema)<= 3:
+    Q = [0, 1, 2]
+    Q0 = 0
+    F = 1
 
-        if lexema[0] == "a":
-            if lexema[1]== "n":
-                if lexema[2]== "d":
-                    return True
-                else: 
-                    return False
-            else: 
-                return False
+    SIGMA = {
+        "and": 0,
+        "or": 1,
+        "not": 2,
+        "o": 3,  # Otros
+    }
 
-        elif lexema[0] == "n":
-            if lexema[1] == "o":
-                if lexema[2] == "t":
-                    return True
-                else: 
-                    return False
-            else: 
-                return False
+    DELTA = [
+        [1, 1, 1, 2],  # Estado 0
+        [2, 2, 2, 2],  # Estado 1
+        [2, 2, 2, 2],  # Estado 2 (Muerto)
+    ]
 
-        elif lexema[0] == "o":
-            if lexema[1] == "r":
-                return True
-            else: 
-                return False
-        else: 
-            return False
-    else:
+    def obtener_lexema_index(lexema):
+        """Devuelve el indice del lexema que se encuentre en SIGMA."""
+
+        if lexema in SIGMA:
+            return SIGMA[lexema]
+
+        return SIGMA["o"]
+
+
+    estado_actual = Q0
+
+    lexema_index = obtener_lexema_index(lexema)
+    estado_actual = DELTA[estado_actual][lexema_index]
+
+    if estado_actual == 2:
         return False
+
+    return estado_actual == F

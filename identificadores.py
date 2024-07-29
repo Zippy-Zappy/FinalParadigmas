@@ -1,26 +1,42 @@
-def es_letra(caracter):
-    return ('a' <= caracter <= 'z') or ('A' <= caracter <= 'Z')
+def es_identificador(lexema: str) -> bool:
+    ESTADO_INICIAL = 0
+    F = [2]
+    Q = range(3)
 
-def es_digito(caracter):
-    return '0' <= caracter <= '9'
+    logicos = ["and", "not", "or"]
 
-def es_identificador(lexema, indice=0):
-    operadores_logicos = ["and", "or", "not"]
+    SIGMA = {
+        "LETRA": 0,  
+        "GUION_BAJO": 1,
+        "DIGITO": 2,
+        "OTRO": 3
+    }
 
-    if len(lexema) == 0:
-        return False
-    
-    if lexema in operadores_logicos:
-        return False
-    
-    if indice == 0:
-        if not (es_letra(lexema[indice]) or lexema[indice] == '_'):
-            return False
-    else:
-        if not (es_letra(lexema[indice]) or es_digito(lexema[indice]) or lexema[indice] == '_'):
-            return False
+    DELTA = [
+        [2, 2, 1, 1], 
+        [1, 1, 1, 1],  
+        [2, 2, 2, 1], 
+    ]
 
-    if indice == len(lexema) - 1:
-        return True
+    # Evaluar Caracter
+    def simbolo(caracter: str) -> int:
+        if ('a' <= caracter <= 'z') or ('A' <= caracter <= 'Z'):
+            return SIGMA["LETRA"]
+        elif caracter == "_":
+            return SIGMA["GUION_BAJO"]
+        elif "0" <= caracter <= "9": 
+            return SIGMA["DIGITO"]
+        else:
+            return SIGMA["OTRO"]
 
-    return es_identificador(lexema, indice + 1)
+    estado_actual = ESTADO_INICIAL
+    indice = 0
+
+    if lexema in logicos:
+        estado_actual = 1
+
+    while indice < len(lexema) and estado_actual != 1:
+        estado_actual = DELTA[estado_actual][simbolo(lexema[indice])]
+        indice += 1
+
+    return estado_actual in F
