@@ -1,7 +1,8 @@
 import analizador
 import re
 
-DELIMITADORES = r'(".*?"|\d+(\.\d+)?([eE][-+]?\d+)?|[a-zA-Z_]\w*|==|!=|<=|>=|[\+\-\*/=(),;:.{}[\]]+)'
+#DELIMITADORES = r'(".*?"|\d+(\.\d+)?([eE][-+]?\d+)?|[a-zA-Z_]\w*|==|!=|<=|>=|\+|\-|\*|\/|=|\(|\)|,|;|:|\.|{|}|\[|\])+'
+DELIMITADORES = r'(".*?"|\d+(\.\d+)?([eE][-+]?\d+)?|[a-zA-Z_]\w*|==|!=|<=|>=|\+|-|\*|\/|=|\(|\)|,|;|:|\.|{|}|\[|\]|\bimport\b|\bdef\b|\bif\b|\belse\b|\belif\b|\breturn\b)'
 
 with open("token.txt", "r") as archivo:
     texto = archivo.read()
