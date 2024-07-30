@@ -12,5 +12,4 @@ tokens = [token.strip() for token in tokens if token.strip()]
 with open("output.txt", 'w') as archivo_nuevo:
     for token in tokens:
         output = analizador.analizar_lexicamente(token)
-        print(output)
         archivo_nuevo.write(output + "\n")
