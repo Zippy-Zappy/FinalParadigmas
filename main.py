@@ -1,13 +1,22 @@
 import analizador
 import re
 
-#DELIMITADORES = r'(".*?"|\d+(\.\d+)?([eE][-+]?\d+)?|[a-zA-Z_]\w*|==|!=|<=|>=|\+|\-|\*|\/|=|\(|\)|,|;|:|\.|{|}|\[|\])+'
-DELIMITADORES = r'(".*?"|\d+(\.\d+)?([eE][-+]?\d+)?|[a-zA-Z_]\w*|==|!=|<=|>=|\+|-|\*|\/|=|\(|\)|,|;|:|\.|{|}|\[|\]|\bimport\b|\bdef\b|\bif\b|\belse\b|\belif\b|\breturn\b)'
+DELIMITADORES = r'''
+(?P<STRING>"[^"]*"|'[^']*') |
+(?P<NUMBER>-?\d*\.\d+|-?\d+\.\d*|-?\d+(?:[eE][-+]?\d+)?|\d+(?:[eE][-+]?\d+)?) |
+(?P<IDENTIFIER>[a-zA-Z_]\w*) |
+(?P<RELATIONAL>==|!=|<=|>=|<|>) |
+(?P<ARITHMETIC>\+|-|\*|\/) |
+(?P<ASSIGNMENT>=) |
+(?P<PUNCTUATION>\(|\)|,|;|:|\.|{|}|\[|\]) |
+(?P<RESERVED>\bimport\b|\bdef\b|\bif\b|\belse\b|\belif\b|\breturn\b)
+'''
 
 with open("token.txt", "r") as archivo:
     texto = archivo.read()
 
-tokens = [token[0] for token in re.findall(DELIMITADORES, texto)]
+
+tokens = [match.group() for match in re.finditer(DELIMITADORES, texto, re.VERBOSE)]
 tokens = [token.strip() for token in tokens if token.strip()]
 
 with open("output.txt", 'w') as archivo_nuevo:
